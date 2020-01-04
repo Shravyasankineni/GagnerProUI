@@ -10,6 +10,8 @@ import { UserRegistrationService } from './user-registration.service';
 import { SearchDeleteComponent } from './search-delete/search-delete.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { ProfessionalformComponent } from './professionalform/professionalform.component';
+import { LoginRegistrationComponent } from './login-registration/login-registration.component';
+import { OrganizationformComponent } from './organizationform/organizationform.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { ProfessionalformComponent } from './professionalform/professionalform.c
     SearchDeleteComponent,
     StudentformComponent,
     ProfessionalformComponent,
+    LoginRegistrationComponent,
+    OrganizationformComponent
   ],
   imports: [
     BrowserModule,

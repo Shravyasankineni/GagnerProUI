@@ -1,3 +1,5 @@
+import { OrganizationformComponent } from './organizationform/organizationform.component';
+import { LoginRegistrationComponent } from './login-registration/login-registration.component';
 import { ProfessionalformComponent } from './professionalform/professionalform.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { SearchDeleteComponent } from './search-delete/search-delete.component';
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path: 'register', component: RegistrationComponent},
   {path: 'search', component: SearchDeleteComponent},
   {path: 'studentregister', component: StudentformComponent},
-  {path: 'professionalregister', component: ProfessionalformComponent}
+  {path: 'professionalregister', component: ProfessionalformComponent},
+  {path: 'organizationregister', component: OrganizationformComponent},
+  {path: 'loginregister', component: LoginRegistrationComponent},
 ];
 
 @NgModule({

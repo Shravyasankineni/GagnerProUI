@@ -1,0 +1,87 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+  <h1>{{message}} </h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Sign Up For New User<span class="req"><small>
+                                required *</small></span></legend>
+
+                    <div class="form-group">
+                        <label for="username"><span class="req">* </span> User Name: <small>This will be your login user
+                                name</small> </label>
+                        <input required type="text" [(ngModel)]="login.username" name="username" id="username"
+                            class="form-control phone" maxlength="28" placeholder="Enter your username..." />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="phonenumber"><span class="req">* </span> Phone Number : </label>
+                      <input class="form-control" type="text" [(ngModel)]="login.phonenumber" name="phonenumber" id="txt"
+                          placeholder="Enter your phonenumber" required />
+                      <div id="errLast"></div>
+                  </div>
+
+                    <div class="form-group">
+                        <label for="email"><span class="req">* </span> Email Id: </label>
+                        <input class="form-control" type="text" [(ngModel)]="login.email" name="email" id="txt" required
+                            placeholder="Enter valid email address" />
+                        <div id="errFirst"></div>
+                   </div>
+
+                   <div class="form-group">
+                    <label for="password"><span class="req">* </span> Password: </label>
+                    <input class="form-control" type="password" [(ngModel)]="login.password" name="password" id="password" required
+                        placeholder="Enter your valid password" />
+                    <div id="errFirst"></div>
+               </div>
+
+
+               <div class="form-group">
+                <label for="confirmpassword"><span class="req">* </span> Confirm Password: </label>
+                <input class="form-control" type="password" [(ngModel)]="login.confirmpassword" name="confirmpassword" id="password" required
+                    placeholder="Enter your valid password" />
+                <div id="errFirst"></div>
+              </div>
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="loginRegisterNow()">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+
+            <form>
+              <fieldset>
+                  <legend class="text-center">Sign In <span class="req"><small>
+                              required *</small></span></legend>
+
+                  <div class="form-group">
+                      <label for="email"><span class="req">* </span> Email Id: </label>
+                      <input class="form-control" type="text" [(ngModel)]="login.email" name="email" id="txt" required
+                          placeholder="Enter valid email address" />
+                      <div id="errFirst"></div>
+                 </div>
+
+                 <div class="form-group">
+                  <label for="password"><span class="req">* </span> Password: </label>
+                  <input class="form-control" type="password" [(ngModel)]="login.password" name="password" id="password" required
+                      placeholder="Enter your valid password" />
+                  <div id="errFirst"></div>
+             </div>
+
+                  <div class="form-group">
+                      <input class="btn btn-success" type="submit" name="submit_reg" value="login" (click)="loginNow()">
+                  </div>
+              </fieldset>
+          </form><!-- ends login form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+

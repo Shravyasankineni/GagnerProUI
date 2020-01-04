@@ -20,8 +20,20 @@ export class UserRegistrationService {
     return this.http.post('http://localhost:9199/students/save', std, {responseType: 'text' as 'json'});
   }
 
+  public doLoginRegistration(login) {
+    return this.http.post('http://localhost:9199/students/save', login, {responseType: 'text' as 'json'});
+  }
+
+  public doLogin(login) {
+    return this.http.post('http://localhost:9199/students/save', login, {responseType: 'text' as 'json'});
+  }
+
   public prfDoRegistration(prf) {
     return this.http.post('http://localhost:9199/students/save', prf, {responseType: 'text' as 'json'});
+  }
+
+  public orgDoRegistration(org) {
+    return this.http.post('http://localhost:9199/students/save', org, {responseType: 'text' as 'json'});
   }
 
   public getUsers() {
